@@ -1,0 +1,23 @@
+{
+  "businessName": "SunRise Solar Solutions",
+  "tagline": "Harness the Power of the Sun",
+  "description": "Leading solar panel installation company in India, providing affordable and sustainable energy solutions for residential, commercial, and industrial clients.",
+  "city": "Bangalore",
+  "state": "Karnataka",
+  "phone": "+91-80-1234-5678",
+  "whatsapp": "+91-98765-43210",
+  "email": "info@sunrisesolar.in",
+  "address": "123 Solar Lane, Whitefield, Bangalore - 560066, Karnataka",
+  "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0821394285265!2d77.7433!3d12.9698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1234567890ab%3A0x1234567890abcdef!2sSunRise%20Solar%20Solutions!5e0!3m2!1sen!2sin!4v1234567890",
+  "workingHours": {
+    "monday_friday": "9:00 AM - 6:00 PM",
+    "saturday": "10:00 AM - 4:00 PM",
+    "sunday": "Closed"
+  },
+  "socialLinks": {
+    "facebook": "https://facebook.com/sunrisesolar",
+    "instagram": "https://instagram.com/sunrisesolar",
+    "youtube": "https://youtube.com/sunrisesolar",
+    "linkedin": "https://linkedin.com/company/sunrisesolar"
+  }
+}

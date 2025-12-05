@@ -1,0 +1,61 @@
+{
+  "residential": {
+    "title": "Residential Solar Solutions",
+    "description": "We install complete solar systems for homes, helping you reduce electricity bills and achieve energy independence.",
+    "features": [
+      "Site survey & consultation",
+      "System design",
+      "Installation",
+      "Grid connection",
+      "Maintenance support"
+    ]
+  },
+  "commercial": {
+    "title": "Commercial Solar Systems",
+    "description": "Tailored solar solutions for businesses looking to cut operational costs and demonstrate environmental responsibility.",
+    "features": [
+      "Rooftop installations",
+      "Ground-mounted systems",
+      "Net metering setup",
+      "Performance monitoring",
+      "Bulk energy savings"
+    ]
+  },
+  "industrial": {
+    "title": "Industrial Solar Solutions",
+    "description": "Large-scale solar installations for manufacturing units and industrial facilities with high energy consumption.",
+    "features": [
+      "High-capacity systems",
+      "Custom design",
+      "Professional installation",
+      "24/7 monitoring",
+      "Warranty & support"
+    ]
+  },
+  "solarPumps": {
+    "title": "Solar Water Pumping",
+    "description": "Eco-friendly water pumping solutions using solar energy for agriculture and community water supply.",
+    "features": ["Agriculture pumps", "Submersible pumps", "Surface pumps", "Easy maintenance", "No electricity costs"]
+  },
+  "maintenance": {
+    "title": "Maintenance & Support",
+    "description": "Comprehensive maintenance services to keep your solar system running efficiently for years.",
+    "features": ["Regular cleaning", "Performance checks", "Component testing", "Repairs", "Warranty support"]
+  },
+  "netMetering": {
+    "title": "Net Metering Setup",
+    "description": "We help you set up net metering to sell excess solar power back to the grid and earn credits.",
+    "features": [
+      "Utility approval",
+      "Dual meter installation",
+      "Connection support",
+      "Documentation",
+      "Legal compliance"
+    ]
+  },
+  "subsidyAssistance": {
+    "title": "Subsidy & Financing",
+    "description": "We assist you in getting government subsidies, loans, and EMI options to make solar affordable.",
+    "features": ["Subsidy documentation", "Loan assistance", "EMI plans", "Grants information", "Financial planning"]
+  }
+}

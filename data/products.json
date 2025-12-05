@@ -1,0 +1,70 @@
+{
+  "solarPanels": [
+    {
+      "id": "panel_1",
+      "brand": "JinkoSolar",
+      "model": "JKM-420M-120",
+      "wattage": 420,
+      "technology": "Monocrystalline",
+      "efficiency": 21.3,
+      "warranty": 25,
+      "bestFor": "Residential & Commercial",
+      "imageId": "solar_panel_1"
+    },
+    {
+      "id": "panel_2",
+      "brand": "Tata Power",
+      "model": "TP-400W-72",
+      "wattage": 400,
+      "technology": "Monocrystalline",
+      "efficiency": 20.5,
+      "warranty": 25,
+      "bestFor": "Residential",
+      "imageId": "solar_panel_2"
+    }
+  ],
+  "inverters": [
+    {
+      "id": "inverter_1",
+      "brand": "Sungrow",
+      "model": "SG10RT",
+      "capacity": "10kW",
+      "type": "String Inverter",
+      "warranty": 10,
+      "efficiency": 98.6,
+      "imageId": "inverter_1"
+    },
+    {
+      "id": "inverter_2",
+      "brand": "ABB",
+      "model": "PVI-5.0",
+      "capacity": "5kW",
+      "type": "String Inverter",
+      "warranty": 12,
+      "efficiency": 98.8,
+      "imageId": "inverter_2"
+    }
+  ],
+  "batteries": [
+    {
+      "id": "battery_1",
+      "brand": "Luminous",
+      "model": "Halo",
+      "capacity": "5kWh",
+      "chemistry": "LiFePO4",
+      "warranty": 10,
+      "warranty_cycles": 6000,
+      "imageId": "battery_1"
+    },
+    {
+      "id": "battery_2",
+      "brand": "Growatt",
+      "model": "ARK-XH 5.8",
+      "capacity": "5.8kWh",
+      "chemistry": "LiFePO4",
+      "warranty": 10,
+      "warranty_cycles": 6000,
+      "imageId": "battery_2"
+    }
+  ]
+}

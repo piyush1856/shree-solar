@@ -1,0 +1,23 @@
+[
+  {
+    "id": "blog_1",
+    "title": "Complete Guide to Solar Subsidy in India 2025",
+    "slug": "solar-subsidy-guide-2025",
+    "shortDescription": "Learn about government subsidies available for solar installations and how to avail them.",
+    "publishDate": "2025-01-15"
+  },
+  {
+    "id": "blog_2",
+    "title": "How to Maximize Your Solar Panel Efficiency",
+    "slug": "maximize-solar-efficiency",
+    "shortDescription": "Tips and tricks to ensure your solar panels generate maximum energy throughout the year.",
+    "publishDate": "2025-01-10"
+  },
+  {
+    "id": "blog_3",
+    "title": "Net Metering: Turn Your Roof into a Money-Making Machine",
+    "slug": "net-metering-explained",
+    "shortDescription": "Understand how net metering works and earn money by selling excess solar power to the grid.",
+    "publishDate": "2025-01-05"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "test_1",
+    "customerName": "Rajesh Kumar",
+    "city": "Bangalore",
+    "rating": 5,
+    "feedback": "Outstanding service! The team was professional, timely, and the solar system is working perfectly. My electricity bill has reduced by 80%.",
+    "imageId": "testimonial_1"
+  },
+  {
+    "id": "test_2",
+    "customerName": "Priya Sharma",
+    "city": "Delhi",
+    "rating": 5,
+    "feedback": "Best decision ever! SunRise Solar Solutions helped me understand everything about solar energy. The installation was smooth and hassle-free.",
+    "imageId": "testimonial_2"
+  },
+  {
+    "id": "test_3",
+    "customerName": "Amit Patel",
+    "city": "Mumbai",
+    "rating": 4.5,
+    "feedback": "Great quality panels and excellent after-sales support. Would definitely recommend to anyone considering solar energy.",
+    "imageId": "testimonial_3"
+  }
+]

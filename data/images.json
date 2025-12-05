@@ -1,0 +1,15 @@
+{
+  "hero_solar_panels": "https://images.unsplash.com/photo-1497440514466-f42ecca43e62?w=1200&h=600&fit=crop",
+  "solar_panel_1": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=400&h=400&fit=crop",
+  "solar_panel_2": "https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=400&h=400&fit=crop",
+  "inverter_1": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=400&fit=crop",
+  "inverter_2": "https://images.unsplash.com/photo-1581092163562-40038f56f20f?w=400&h=400&fit=crop",
+  "battery_1": "https://images.unsplash.com/photo-1578575437980-ba2b2fca3b7c?w=400&h=400&fit=crop",
+  "battery_2": "https://images.unsplash.com/photo-1581092918174-b1e62acd35c8?w=400&h=400&fit=crop",
+  "project_residential": "https://images.unsplash.com/photo-1488873386331-e0d3be82e1aa?w=500&h=300&fit=crop",
+  "project_commercial": "https://images.unsplash.com/photo-1486634550140-461dc9a13055?w=500&h=300&fit=crop",
+  "project_industrial": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=300&fit=crop",
+  "testimonial_1": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+  "testimonial_2": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+  "testimonial_3": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+}

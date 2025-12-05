@@ -1,0 +1,35 @@
+[
+  {
+    "id": "proj_1",
+    "projectName": "Whitefield Residential Complex",
+    "city": "Bangalore",
+    "systemSize": "50 kW",
+    "beforeBill": "₹75,000/month",
+    "afterBill": "₹15,000/month",
+    "savings": "₹60,000/month",
+    "customerType": "Residential Society",
+    "imageId": "project_residential"
+  },
+  {
+    "id": "proj_2",
+    "projectName": "Tech Park Solar Canopy",
+    "city": "Hyderabad",
+    "systemSize": "100 kW",
+    "beforeBill": "₹1,50,000/month",
+    "afterBill": "₹30,000/month",
+    "savings": "₹1,20,000/month",
+    "customerType": "Commercial",
+    "imageId": "project_commercial"
+  },
+  {
+    "id": "proj_3",
+    "projectName": "Manufacturing Unit Solar Farm",
+    "city": "Pune",
+    "systemSize": "200 kW",
+    "beforeBill": "₹3,00,000/month",
+    "afterBill": "₹50,000/month",
+    "savings": "₹2,50,000/month",
+    "customerType": "Industrial",
+    "imageId": "project_industrial"
+  }
+]

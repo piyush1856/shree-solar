@@ -1,0 +1,57 @@
+[
+  {
+    "id": "pkg_1kw",
+    "systemSize": "1 kW",
+    "priceRange": "₹2,00,000 - ₹2,50,000",
+    "monthlyUnitGeneration": "120-150 kWh",
+    "monthlySavings": "₹1,200 - ₹1,500",
+    "roofAreaRequired": "60-80 sq ft",
+    "subsidyEligible": true,
+    "emiAvailable": true,
+    "description": "Perfect for small residential needs"
+  },
+  {
+    "id": "pkg_2kw",
+    "systemSize": "2 kW",
+    "priceRange": "₹3,50,000 - ₹4,50,000",
+    "monthlyUnitGeneration": "240-300 kWh",
+    "monthlySavings": "₹2,400 - ₹3,000",
+    "roofAreaRequired": "120-160 sq ft",
+    "subsidyEligible": true,
+    "emiAvailable": true,
+    "description": "Ideal for average households"
+  },
+  {
+    "id": "pkg_3kw",
+    "systemSize": "3 kW",
+    "priceRange": "₹4,50,000 - ₹5,50,000",
+    "monthlyUnitGeneration": "360-450 kWh",
+    "monthlySavings": "₹3,600 - ₹4,500",
+    "roofAreaRequired": "180-240 sq ft",
+    "subsidyEligible": true,
+    "emiAvailable": true,
+    "description": "Most popular choice for families"
+  },
+  {
+    "id": "pkg_5kw",
+    "systemSize": "5 kW",
+    "priceRange": "₹7,00,000 - ₹8,50,000",
+    "monthlyUnitGeneration": "600-750 kWh",
+    "monthlySavings": "₹6,000 - ₹7,500",
+    "roofAreaRequired": "300-400 sq ft",
+    "subsidyEligible": true,
+    "emiAvailable": true,
+    "description": "For large homes and small businesses"
+  },
+  {
+    "id": "pkg_10kw",
+    "systemSize": "10 kW",
+    "priceRange": "₹12,00,000 - ₹15,00,000",
+    "monthlyUnitGeneration": "1200-1500 kWh",
+    "monthlySavings": "₹12,000 - ₹15,000",
+    "roofAreaRequired": "600-800 sq ft",
+    "subsidyEligible": true,
+    "emiAvailable": true,
+    "description": "Excellent for commercial establishments"
+  }
+]
