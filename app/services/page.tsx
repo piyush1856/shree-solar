@@ -1,7 +1,7 @@
 import { ServicesList } from "@/components/services-list"
 
 export const metadata = {
-  title: "Services | SolarMax",
+  title: "Services | Shree Solar",
   description:
     "Complete solar installation services from design to maintenance. Expert team, professional installation.",
 }

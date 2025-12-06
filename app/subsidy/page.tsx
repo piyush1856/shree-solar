@@ -1,7 +1,7 @@
 import { SubsidyInfo } from "@/components/subsidy-info"
 
 export const metadata = {
-  title: "Government Subsidies | SolarMax",
+  title: "Government Subsidies | Shree Solar",
   description: "Learn about available government schemes and subsidies for solar installation.",
 }
 

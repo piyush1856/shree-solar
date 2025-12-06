@@ -10,7 +10,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SolarMax | Premium Solar Panel Installation in India",
+  title: "Shree Solar | Premium Solar Energy Solutions in Jharkhand",
   description:
     "Leading solar panel installation company. Save up to 90% on electricity bills with our premium solar solutions. Expert installation, lifetime support.",
   generator: "v0.app",

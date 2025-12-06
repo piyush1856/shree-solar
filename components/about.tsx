@@ -1,15 +1,41 @@
+"use client"
+
+import { useEffect, useState } from "react"
+import { loadCompanyData, type CompanyData } from "@/lib/company-loader"
+
 export function About() {
+  const [companyData, setCompanyData] = useState<CompanyData | null>(null)
+
+  useEffect(() => {
+    loadCompanyData().then(setCompanyData).catch(console.error)
+  }, [])
+
+  if (!companyData) {
+    return (
+      <main className="min-h-screen flex items-center justify-center">
+        <p className="text-slate-600 dark:text-slate-400">Loading...</p>
+      </main>
+    )
+  }
+
   return (
     <main className="min-h-screen">
       {/* Header */}
       <div className="bg-gradient-to-b from-green-50 to-white dark:from-slate-900 dark:to-slate-800 py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 text-balance">
-            About SolarMax
-          </h1>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl">
-            Leading the renewable energy revolution in India with premium solar solutions.
-          </p>
+          <div className="flex flex-col items-start gap-6">
+            <div className="flex items-center gap-2">
+              <span className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-none">About</span>
+              <img 
+                src={companyData.logo.horizontal} 
+                alt={companyData.logo.alt}
+                className="h-16 md:h-20 mt-1.5"
+              />
+            </div>
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl">
+              {companyData.about.shortDescription}
+            </p>
+          </div>
         </div>
       </div>
 
@@ -41,7 +67,7 @@ export function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { stat: "5000+", label: "Happy Customers" },
-              { stat: "10+", label: "Years Experience" },
+              { stat: `${new Date().getFullYear() - companyData.about.yearEstablished}+`, label: "Years Experience" },
               { stat: "15MW+", label: "Installed Capacity" },
               { stat: "₹500Cr+", label: "Customer Savings" },
             ].map((item, idx) => (

@@ -1,7 +1,7 @@
 import { SolarCalculator } from "@/components/solar-calculator"
 
 export const metadata = {
-  title: "Solar Calculator | SolarMax",
+  title: "Solar Calculator | Shree Solar",
   description:
     "Calculate your potential solar savings based on your electricity consumption. Get personalized recommendations.",
 }

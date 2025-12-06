@@ -1,7 +1,7 @@
 import { PackagesList } from "@/components/packages-list"
 
 export const metadata = {
-  title: "Solar Packages | SolarMax",
+  title: "Solar Packages | Shree Solar",
   description: "Pre-configured solar system packages for different needs and budgets. Flexible financing available.",
 }
 

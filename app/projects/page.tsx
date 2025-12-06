@@ -1,7 +1,7 @@
 import { ProjectsList } from "@/components/projects-list"
 
 export const metadata = {
-  title: "Our Projects | SolarMax",
+  title: "Our Projects | Shree Solar",
   description: "Browse our completed solar installations. See real projects and customer results.",
 }
 

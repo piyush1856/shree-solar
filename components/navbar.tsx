@@ -1,12 +1,17 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
-import { siteData } from "@/lib/data"
+import { loadCompanyData, type CompanyData } from "@/lib/company-loader"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [companyData, setCompanyData] = useState<CompanyData | null>(null)
+
+  useEffect(() => {
+    loadCompanyData().then(setCompanyData).catch(console.error)
+  }, [])
 
   const links = [
     { href: "/", label: "Home" },
@@ -25,11 +30,28 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">☀️</span>
+          <Link href="/" className="flex items-center gap-3 group">
+            {companyData?.logo && (
+              <div className="relative">
+                <img
+                  src={companyData.logo.icon}
+                  alt={companyData.logo.alt}
+                  className="w-12 h-12 transition-all duration-300 group-hover:scale-110 drop-shadow-md"
+                />
+              </div>
+            )}
+            <div className="hidden sm:flex flex-col -space-y-1">
+              <span className="text-2xl font-extrabold tracking-tight leading-none">
+                <span className="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 dark:from-emerald-400 dark:via-green-400 dark:to-teal-400 bg-clip-text text-transparent">
+                  {companyData?.brandName?.split(' ')[0] || "Shree"}
+                </span>
+              </span>
+              <span className="text-xl font-bold tracking-wide leading-none pl-0.5">
+                <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 dark:from-amber-400 dark:via-orange-400 dark:to-yellow-400 bg-clip-text text-transparent">
+                  {companyData?.brandName?.split(' ')[1] || "Solar"}
+                </span>
+              </span>
             </div>
-            <span className="font-bold text-lg text-slate-900 dark:text-white hidden sm:inline">{siteData.name}</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -48,7 +70,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <a
-              href={`tel:${siteData.phone}`}
+              href={`tel:${companyData?.contact.phone}`}
               className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
             >
               Call Now
@@ -75,7 +97,7 @@ export function Navbar() {
               </Link>
             ))}
             <a
-              href={`tel:${siteData.phone}`}
+              href={`tel:${companyData?.contact.phone}`}
               className="block mx-4 mt-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium text-center"
             >
               Call Now

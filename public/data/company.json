@@ -1,0 +1,72 @@
+{
+  "brandName": "Shree Solar",
+  "tagline": "Powering Tomorrow with Solar Energy",
+  "logo": {
+    "icon": "/shree-solar/logo.svg",
+    "text": "/shree-solar/logo-text.svg",
+    "horizontal": "/shree-solar/logo-horizontal.svg",
+    "full": "/shree-solar/logo-full.svg",
+    "alt": "Shree Solar Logo"
+  },
+  "contact": {
+    "phone": "+91 98765 43210",
+    "email": "info@shreesolar.com",
+    "whatsapp": "+919876543210"
+  },
+  "address": {
+    "street": "Shree Laxmi Traders",
+    "city": "Deoghar",
+    "state": "Jharkhand",
+    "pincode": "814112",
+    "country": "India",
+    "fullAddress": "Shree Laxmi Traders, Deoghar, Jharkhand 814112, India"
+  },
+  "socialMedia": [
+    {
+      "type": "facebook",
+      "url": "https://facebook.com/shreesolar",
+      "label": "Facebook"
+    },
+    {
+      "type": "instagram",
+      "url": "https://instagram.com/shreesolar",
+      "label": "Instagram"
+    },
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/shreesolar",
+      "label": "Twitter"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://linkedin.com/company/shreesolar",
+      "label": "LinkedIn"
+    },
+    {
+      "type": "youtube",
+      "url": "https://youtube.com/@shreesolar",
+      "label": "YouTube"
+    }
+  ],
+  "map": {
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.9012355619734!2d87.20084927542112!3d24.833050946353772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0f520484085e1%3A0xd5e20e0e8c5670da!2sSHREE%20LAXMI%20TRADERS!5e0!3m2!1sen!2sin!4v1765056285072!5m2!1sen!2sin",
+    "latitude": 24.833050946353772,
+    "longitude": 87.20084927542112,
+    "placeId": "ChIJ4YVASCDwDzkR2nBWjA4O4tU"
+  },
+  "businessHours": {
+    "monday": "9:00 AM - 6:00 PM",
+    "tuesday": "9:00 AM - 6:00 PM",
+    "wednesday": "9:00 AM - 6:00 PM",
+    "thursday": "9:00 AM - 6:00 PM",
+    "friday": "9:00 AM - 6:00 PM",
+    "saturday": "9:00 AM - 6:00 PM",
+    "sunday": "Closed"
+  },
+  "about": {
+    "shortDescription": "Leading solar energy solutions provider in Jharkhand, India. We specialize in solar panels, inverters, batteries, and complete solar installations for residential and commercial properties.",
+    "yearEstablished": 2015,
+    "gst": "20XXXXX1234X1ZX"
+  }
+}
+

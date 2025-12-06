@@ -2,13 +2,18 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Phone, Mail, MapPin } from "lucide-react"
-import { siteData } from "@/lib/data"
+import { loadCompanyData, type CompanyData } from "@/lib/company-loader"
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
+  const [companyData, setCompanyData] = useState<CompanyData | null>(null)
+
+  useEffect(() => {
+    loadCompanyData().then(setCompanyData).catch(console.error)
+  }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -16,6 +21,14 @@ export function Contact() {
     setSubmitted(true)
     setTimeout(() => setSubmitted(false), 5000)
     setFormData({ name: "", email: "", phone: "", message: "" })
+  }
+
+  if (!companyData) {
+    return (
+      <main className="min-h-screen flex items-center justify-center">
+        <p className="text-slate-600 dark:text-slate-400">Loading...</p>
+      </main>
+    )
   }
 
   return (
@@ -114,8 +127,8 @@ export function Contact() {
                     <Phone size={24} className="text-green-600 mt-1" />
                     <div>
                       <h3 className="font-semibold text-slate-900 dark:text-white">Phone</h3>
-                      <a href={`tel:${siteData.phone}`} className="text-green-600 hover:underline">
-                        {siteData.phone}
+                      <a href={`tel:${companyData.contact.phone}`} className="text-green-600 hover:underline">
+                        {companyData.contact.phone}
                       </a>
                     </div>
                   </div>
@@ -124,8 +137,8 @@ export function Contact() {
                     <Mail size={24} className="text-green-600 mt-1" />
                     <div>
                       <h3 className="font-semibold text-slate-900 dark:text-white">Email</h3>
-                      <a href={`mailto:${siteData.email}`} className="text-green-600 hover:underline">
-                        {siteData.email}
+                      <a href={`mailto:${companyData.contact.email}`} className="text-green-600 hover:underline">
+                        {companyData.contact.email}
                       </a>
                     </div>
                   </div>
@@ -134,15 +147,25 @@ export function Contact() {
                     <MapPin size={24} className="text-green-600 mt-1" />
                     <div>
                       <h3 className="font-semibold text-slate-900 dark:text-white">Address</h3>
-                      <p className="text-slate-600 dark:text-slate-300">{siteData.address}</p>
+                      <p className="text-slate-600 dark:text-slate-300">{companyData.address.fullAddress}</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Map */}
-              <div className="bg-slate-200 dark:bg-slate-600 rounded-lg h-80 flex items-center justify-center">
-                <p className="text-slate-600 dark:text-slate-400">📍 Map coming soon</p>
+              {/* Google Map */}
+              <div className="bg-slate-200 dark:bg-slate-600 rounded-lg overflow-hidden h-80">
+                <iframe
+                  src={companyData.map.embedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Shree Solar Location"
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
           </div>

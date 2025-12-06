@@ -1,14 +1,14 @@
 export const siteData = {
-  name: "SolarMax",
-  tagline: "Premium Solar Solutions for Modern India",
-  description: "Leading solar panel installation company transforming homes and businesses with clean energy.",
+  name: "Shree Solar",
+  tagline: "Powering Tomorrow with Solar Energy",
+  description: "Leading solar energy solutions provider in Jharkhand, India. We specialize in solar panels, inverters, batteries, and complete solar installations.",
   phone: "+91 98765 43210",
-  email: "info@solarmax.com",
-  address: "Plot 123, Tech Park, Bangalore, India",
+  email: "info@shreesolar.com",
+  address: "Shree Laxmi Traders, Deoghar, Jharkhand 814112, India",
   social: {
-    facebook: "https://facebook.com/solarmax",
-    instagram: "https://instagram.com/solarmax",
-    linkedin: "https://linkedin.com/company/solarmax",
+    facebook: "https://facebook.com/shreesolar",
+    instagram: "https://instagram.com/shreesolar",
+    linkedin: "https://linkedin.com/company/shreesolar",
   },
 }
 
@@ -124,7 +124,7 @@ export const testimonials = [
     id: 1,
     name: "Rajesh Kumar",
     role: "Homeowner, Bangalore",
-    text: "SolarMax installed a 5kW system at my home. My electricity bills have reduced by 85%. Highly recommended!",
+    text: "Shree Solar installed a 5kW system at my home. My electricity bills have reduced by 85%. Highly recommended!",
     rating: 5,
   },
   {

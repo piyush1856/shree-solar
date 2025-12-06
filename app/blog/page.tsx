@@ -1,7 +1,7 @@
 import { BlogList } from "@/components/blog-list"
 
 export const metadata = {
-  title: "Blog | SolarMax",
+  title: "Blog | Shree Solar",
   description: "Latest insights on solar energy, government schemes, and renewable energy trends.",
 }
 
