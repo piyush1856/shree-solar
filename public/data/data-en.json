@@ -1,0 +1,97 @@
+{
+  "products": {
+    "1": {
+      "name": "Solar Panel",
+      "shortDescription": "High-efficiency solar panels for residential and commercial installations."
+    },
+    "2": {
+      "name": "Solar Inverter",
+      "shortDescription": "Advanced solar inverters with hybrid and battery backup support."
+    },
+    "3": {
+      "name": "Lithium Battery",
+      "shortDescription": "Long-lasting lithium batteries for solar energy storage."
+    },
+    "4": {
+      "name": "Solar Pump",
+      "shortDescription": "Efficient solar-powered pumps for agricultural and residential use."
+    }
+  },
+  "variants": {
+    "101": {
+      "displayName": "Waaree 595W N-Type Bifacial Panel"
+    },
+    "102": {
+      "displayName": "Waaree 550W N-Type Bifacial Panel"
+    },
+    "103": {
+      "displayName": "JinkoSolar Tiger Neo 615W"
+    },
+    "104": {
+      "displayName": "JinkoSolar Tiger Neo 580W"
+    },
+    "201": {
+      "displayName": "Sungrow SG10RT 10kW Hybrid Inverter"
+    },
+    "202": {
+      "displayName": "Sungrow SG5RT 5kW Hybrid Inverter"
+    },
+    "203": {
+      "displayName": "Sungrow SG3RT 3kW Hybrid Inverter"
+    },
+    "204": {
+      "displayName": "Sungrow SG7RT 7kW Hybrid Inverter"
+    },
+    "301": {
+      "displayName": "Luminous Halo 5kWh LiFePO4 Battery"
+    },
+    "302": {
+      "displayName": "Luminous Halo 10kWh LiFePO4 Battery"
+    },
+    "303": {
+      "displayName": "Luminous Halo 7.5kWh LiFePO4 Battery"
+    },
+    "304": {
+      "displayName": "Luminous Halo 3kWh LiFePO4 Battery"
+    },
+    "401": {
+      "displayName": "Crompton 3HP Solar Submersible Pump"
+    },
+    "402": {
+      "displayName": "Crompton 5HP Solar Submersible Pump"
+    },
+    "403": {
+      "displayName": "Crompton 2HP Solar Submersible Pump"
+    },
+    "404": {
+      "displayName": "Crompton 7.5HP Solar Submersible Pump"
+    }
+  },
+  "attributes": {
+    "1": {
+      "name": "Wattage"
+    },
+    "2": {
+      "name": "Efficiency"
+    },
+    "3": {
+      "name": "Warranty"
+    },
+    "4": {
+      "name": "Technology"
+    },
+    "5": {
+      "name": "Capacity"
+    },
+    "6": {
+      "name": "Cycles"
+    },
+    "7": {
+      "name": "HP"
+    },
+    "8": {
+      "name": "Brand"
+    }
+  }
+}
+

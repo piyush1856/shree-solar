@@ -4,25 +4,27 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { loadCompanyData, type CompanyData } from "@/lib/company-loader"
+import { useTranslation } from "@/hooks/use-translation"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [companyData, setCompanyData] = useState<CompanyData | null>(null)
+  const { t } = useTranslation()
 
   useEffect(() => {
     loadCompanyData().then(setCompanyData).catch(console.error)
   }, [])
 
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/products", label: "Products" },
-    { href: "/packages", label: "Packages" },
-    { href: "/calculator", label: "Calculator" },
-    { href: "/services", label: "Services" },
-    { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
-    { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: t("nav.home") },
+    { href: "/products", label: t("nav.products") },
+    { href: "/packages", label: t("nav.packages") },
+    { href: "/calculator", label: t("nav.calculator") },
+    { href: "/services", label: t("nav.services") },
+    { href: "/projects", label: t("nav.projects") },
+    { href: "/about", label: t("nav.about") },
+    { href: "/blog", label: t("nav.blog") },
+    { href: "/contact", label: t("nav.contact") },
   ]
 
   return (
@@ -73,7 +75,7 @@ export function Navbar() {
               href={`tel:${companyData?.contact.phone}`}
               className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
             >
-              Call Now
+              {t("nav.callNow")}
             </a>
           </div>
 
@@ -100,7 +102,7 @@ export function Navbar() {
               href={`tel:${companyData?.contact.phone}`}
               className="block mx-4 mt-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium text-center"
             >
-              Call Now
+              {t("nav.callNow")}
             </a>
           </div>
         )}

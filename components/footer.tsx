@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { loadCompanyData, type CompanyData } from "@/lib/company-loader"
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react"
+import { useTranslation } from "@/hooks/use-translation"
 
 const getSocialIcon = (type: string) => {
   const icons: Record<string, any> = {
@@ -17,6 +18,7 @@ const getSocialIcon = (type: string) => {
 }
 
 export function Footer() {
+  const { t } = useTranslation()
   const [companyData, setCompanyData] = useState<CompanyData | null>(null)
 
   useEffect(() => {
@@ -53,26 +55,26 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">{t("footer.quickLinks")}</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <Link href="/" className="hover:text-green-400">
-                  Home
+                  {t("nav.home")}
                 </Link>
               </li>
               <li>
                 <Link href="/products" className="hover:text-green-400">
-                  Products
+                  {t("nav.products")}
                 </Link>
               </li>
               <li>
                 <Link href="/calculator" className="hover:text-green-400">
-                  Calculator
+                  {t("nav.calculator")}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-green-400">
-                  Contact
+                  {t("nav.contact")}
                 </Link>
               </li>
             </ul>
@@ -80,21 +82,21 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
+            <h4 className="font-semibold mb-4">{t("footer.resources")}</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <Link href="/services" className="hover:text-green-400">
-                  Services
+                  {t("nav.services")}
                 </Link>
               </li>
               <li>
                 <Link href="/projects" className="hover:text-green-400">
-                  Projects
+                  {t("nav.projects")}
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="hover:text-green-400">
-                  Blog
+                  {t("nav.blog")}
                 </Link>
               </li>
               <li>
@@ -107,7 +109,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4">{t("footer.contact")}</h4>
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-center gap-2">
                 <Phone size={16} />
@@ -132,7 +134,7 @@ export function Footer() {
         {/* Social Links */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-slate-400">
-            © {new Date().getFullYear()} {companyData.brandName}. All rights reserved.
+            © {new Date().getFullYear()} {companyData.brandName}. {t("footer.allRights")}
           </p>
           <div className="flex gap-4">
             {companyData.socialMedia.map((social) => {

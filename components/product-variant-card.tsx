@@ -8,6 +8,7 @@ import type { Attribute } from '@/lib/data-loader'
 import { getImageUrl } from '@/lib/product-helpers'
 import { getAttributesForVariant } from '@/lib/product-helpers'
 import type { VariantAttributeMap } from '@/lib/data-loader'
+import { useTranslation } from '@/hooks/use-translation'
 
 interface ProductVariantCardProps {
   variant: VariantWithAttributes
@@ -24,6 +25,7 @@ export function ProductVariantCard({
   images,
   whatsappNumber,
 }: ProductVariantCardProps) {
+  const { t, td } = useTranslation()
   const variantAttributes = getAttributesForVariant(
     variant.id,
     variantAttributeMap,
@@ -76,7 +78,7 @@ export function ProductVariantCard({
             className="absolute top-2 right-2 bg-green-600 text-white"
             variant="default"
           >
-            In Stock
+            {t("products.inStock")}
           </Badge>
         )}
       </div>
@@ -84,7 +86,7 @@ export function ProductVariantCard({
       {/* Content */}
       <div className="p-6">
         <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 line-clamp-2">
-          {variant.displayName}
+          {td('variants', variant.id, 'displayName') || variant.displayName}
         </h3>
 
         {/* Price */}
@@ -103,7 +105,7 @@ export function ProductVariantCard({
                 className="flex justify-between text-sm"
               >
                 <span className="text-slate-600 dark:text-slate-400">
-                  {attr.attribute.name}:
+                  {td('attributes', attr.attribute.id, 'name') || attr.attribute.name}:
                 </span>
                 <span className="font-semibold text-slate-900 dark:text-white">
                   {attr.value}
@@ -120,7 +122,7 @@ export function ProductVariantCard({
           className="w-full bg-green-600 hover:bg-green-700 text-white"
           size="default"
         >
-          Get Quote
+          {t("buttons.getQuote")}
         </Button>
       </div>
     </div>

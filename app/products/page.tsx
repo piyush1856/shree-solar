@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import { ProductTabs } from '@/components/product-tabs'
 import { FilterSidebar } from '@/components/filter-sidebar'
 import { ProductVariantGrid } from '@/components/product-variant-grid'
+import { useTranslation } from '@/hooks/use-translation'
 import {
   loadProducts,
   loadVariants,
@@ -20,6 +21,7 @@ import type { VariantWithAttributes } from '@/lib/product-helpers'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 
 function ProductsPageContent() {
+  const { t } = useTranslation()
   const searchParams = useSearchParams()
   const productIdParam = searchParams.get('productId')
   const [sortOption, setSortOption] = useState<SortOption>('price-low-high')
@@ -146,11 +148,10 @@ function ProductsPageContent() {
       <div className="bg-gradient-to-b from-green-50 to-white dark:from-slate-900 dark:to-slate-800">
         <div className="container mx-auto px-4 py-12 md:py-20">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4 text-balance">
-            Our Solar Products
+            {t("products.title")}
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
-            Premium quality solar panels, inverters, and energy storage solutions for residential and commercial
-            installations.
+            {t("products.subtitle")}
           </p>
         </div>
       </div>
@@ -172,21 +173,21 @@ function ProductsPageContent() {
             {/* Sort and Results Count */}
             <div className="flex items-center justify-between mb-6">
               <div className="text-sm text-slate-600 dark:text-slate-400">
-                Showing {sortedVariants.length} product{sortedVariants.length !== 1 ? 's' : ''}
+                {t("products.showing")} {sortedVariants.length} {sortedVariants.length === 1 ? t("products.product") : t("products.products")}
               </div>
               <div className="flex items-center gap-2">
                 <label htmlFor="sort" className="text-sm text-slate-600 dark:text-slate-400">
-                  Sort by:
+                  {t("products.sortBy")}
                 </label>
                 <Select value={sortOption} onValueChange={(value) => setSortOption(value as SortOption)}>
                   <SelectTrigger id="sort" className="w-[180px]">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="price-low-high">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high-low">Price: High to Low</SelectItem>
-                    <SelectItem value="wattage-high">Highest Wattage</SelectItem>
-                    <SelectItem value="efficiency-high">Best Efficiency</SelectItem>
+                    <SelectItem value="price-low-high">{t("products.priceLoHi")}</SelectItem>
+                    <SelectItem value="price-high-low">{t("products.priceHiLo")}</SelectItem>
+                    <SelectItem value="wattage-high">{t("products.wattageHigh")}</SelectItem>
+                    <SelectItem value="efficiency-high">{t("products.efficiencyHigh")}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

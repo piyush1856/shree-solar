@@ -7,6 +7,7 @@ import { Slider } from '@/components/ui/slider'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
+import { useTranslation } from '@/hooks/use-translation'
 
 interface FilterSidebarProps {
   attributes: Attribute[]
@@ -25,6 +26,7 @@ export function FilterSidebar({
   onFiltersChange,
   variantAttributeMap,
 }: FilterSidebarProps) {
+  const { t, td } = useTranslation()
   const [localFilters, setLocalFilters] = useState<FilterState>(filters)
 
   useEffect(() => {
@@ -85,7 +87,7 @@ export function FilterSidebar({
     return (
       <aside className="w-full md:w-64 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6">
         <div className="text-sm text-slate-600 dark:text-slate-400">
-          No filters available.
+          {t("filters.noFilters")}
         </div>
       </aside>
     )
@@ -95,7 +97,7 @@ export function FilterSidebar({
     <aside className="w-full md:w-64 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
-          Filters
+          {t("filters.title")}
         </h2>
         <Button
           variant="ghost"
@@ -103,7 +105,7 @@ export function FilterSidebar({
           onClick={handleClearFilters}
           className="text-xs"
         >
-          Clear
+          {t("filters.clear")}
         </Button>
       </div>
 
@@ -121,7 +123,7 @@ export function FilterSidebar({
             return (
               <div key={attribute.id}>
                 <Label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
-                  {attribute.name} ({attribute.unit})
+                  {td('attributes', attribute.id, 'name') || attribute.name} ({attribute.unit})
                 </Label>
                 <div className="px-2">
                   <Slider
@@ -154,7 +156,7 @@ export function FilterSidebar({
             return (
               <div key={attribute.id}>
                 <Label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3 block">
-                  {attribute.name}
+                  {td('attributes', attribute.id, 'name') || attribute.name}
                 </Label>
                 <div className="space-y-2">
                   {values.map((value) => (
