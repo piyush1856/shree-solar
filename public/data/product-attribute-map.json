@@ -1,0 +1,17 @@
+[
+  { "productId": 1, "attributeId": 1, "isFilter": true },
+  { "productId": 1, "attributeId": 2, "isFilter": false },
+  { "productId": 1, "attributeId": 3, "isFilter": true },
+  { "productId": 1, "attributeId": 4, "isFilter": true },
+  { "productId": 1, "attributeId": 8, "isFilter": true },
+  { "productId": 2, "attributeId": 2, "isFilter": true },
+  { "productId": 2, "attributeId": 3, "isFilter": false },
+  { "productId": 2, "attributeId": 5, "isFilter": true },
+  { "productId": 2, "attributeId": 8, "isFilter": true },
+  { "productId": 3, "attributeId": 3, "isFilter": true },
+  { "productId": 3, "attributeId": 6, "isFilter": true },
+  { "productId": 3, "attributeId": 8, "isFilter": true },
+  { "productId": 4, "attributeId": 3, "isFilter": true },
+  { "productId": 4, "attributeId": 7, "isFilter": true },
+  { "productId": 4, "attributeId": 8, "isFilter": true }
+]

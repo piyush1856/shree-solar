@@ -1,0 +1,162 @@
+[
+  {
+    "id": 101,
+    "productId": 1,
+    "displayName": "Waaree 595W N-Type Bifacial Panel",
+    "price": 10999,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["waaree-595-front"],
+    "isActive": true
+  },
+  {
+    "id": 102,
+    "productId": 1,
+    "displayName": "Waaree 550W N-Type Bifacial Panel",
+    "price": 9999,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["waaree-550-front"],
+    "isActive": true
+  },
+  {
+    "id": 103,
+    "productId": 1,
+    "displayName": "JinkoSolar Tiger Neo 615W",
+    "price": 12999,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["jinko-615-front"],
+    "isActive": true
+  },
+  {
+    "id": 104,
+    "productId": 1,
+    "displayName": "JinkoSolar Tiger Neo 580W",
+    "price": 11999,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["jinko-580-front"],
+    "isActive": true
+  },
+  {
+    "id": 201,
+    "productId": 2,
+    "displayName": "Sungrow SG10RT 10kW Hybrid Inverter",
+    "price": 180000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["sungrow-10kw"],
+    "isActive": true
+  },
+  {
+    "id": 202,
+    "productId": 2,
+    "displayName": "Sungrow SG5RT 5kW Hybrid Inverter",
+    "price": 95000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["sungrow-5kw"],
+    "isActive": true
+  },
+  {
+    "id": 203,
+    "productId": 2,
+    "displayName": "Sungrow SG3RT 3kW Hybrid Inverter",
+    "price": 65000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["sungrow-3kw"],
+    "isActive": true
+  },
+  {
+    "id": 204,
+    "productId": 2,
+    "displayName": "Sungrow SG7RT 7kW Hybrid Inverter",
+    "price": 125000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["sungrow-7kw"],
+    "isActive": true
+  },
+  {
+    "id": 301,
+    "productId": 3,
+    "displayName": "Luminous Halo 5kWh LiFePO4 Battery",
+    "price": 300000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["luminous-5kwh"],
+    "isActive": true
+  },
+  {
+    "id": 302,
+    "productId": 3,
+    "displayName": "Luminous Halo 10kWh LiFePO4 Battery",
+    "price": 550000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["luminous-10kwh"],
+    "isActive": true
+  },
+  {
+    "id": 303,
+    "productId": 3,
+    "displayName": "Luminous Halo 7.5kWh LiFePO4 Battery",
+    "price": 425000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["luminous-7.5kwh"],
+    "isActive": true
+  },
+  {
+    "id": 304,
+    "productId": 3,
+    "displayName": "Luminous Halo 3kWh LiFePO4 Battery",
+    "price": 200000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["luminous-3kwh"],
+    "isActive": true
+  },
+  {
+    "id": 401,
+    "productId": 4,
+    "displayName": "Crompton 3HP Solar Submersible Pump",
+    "price": 85000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["crompton-3hp"],
+    "isActive": true
+  },
+  {
+    "id": 402,
+    "productId": 4,
+    "displayName": "Crompton 5HP Solar Submersible Pump",
+    "price": 125000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["crompton-5hp"],
+    "isActive": true
+  },
+  {
+    "id": 403,
+    "productId": 4,
+    "displayName": "Crompton 2HP Solar Submersible Pump",
+    "price": 65000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["crompton-2hp"],
+    "isActive": true
+  },
+  {
+    "id": 404,
+    "productId": 4,
+    "displayName": "Crompton 7.5HP Solar Submersible Pump",
+    "price": 165000,
+    "currency": "INR",
+    "stockStatus": "in-stock",
+    "imageIds": ["crompton-7.5hp"],
+    "isActive": true
+  }
+]

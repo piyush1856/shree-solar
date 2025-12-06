@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "code": "wattage",
+    "name": "Wattage",
+    "unit": "W",
+    "type": "number",
+    "filterable": true
+  },
+  {
+    "id": 2,
+    "code": "efficiency",
+    "name": "Efficiency",
+    "unit": "%",
+    "type": "number",
+    "filterable": true
+  },
+  {
+    "id": 3,
+    "code": "warranty",
+    "name": "Warranty",
+    "unit": "Years",
+    "type": "number",
+    "filterable": true
+  },
+  {
+    "id": 4,
+    "code": "technology",
+    "name": "Technology",
+    "unit": "",
+    "type": "string",
+    "filterable": true
+  },
+  {
+    "id": 5,
+    "code": "capacity",
+    "name": "Capacity",
+    "unit": "kW",
+    "type": "string",
+    "filterable": true
+  },
+  {
+    "id": 6,
+    "code": "cycles",
+    "name": "Charge Cycles",
+    "unit": "",
+    "type": "number",
+    "filterable": true
+  },
+  {
+    "id": 7,
+    "code": "hp",
+    "name": "Horsepower",
+    "unit": "HP",
+    "type": "string",
+    "filterable": true
+  },
+  {
+    "id": 8,
+    "code": "brand",
+    "name": "Brand",
+    "unit": "",
+    "type": "string",
+    "filterable": true
+  }
+]
+

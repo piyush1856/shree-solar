@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Solar Panel",
+    "slug": "solar-panel",
+    "shortDescription": "High-efficiency solar panels for residential and commercial installations.",
+    "defaultVariantId": 101,
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Solar Inverter",
+    "slug": "solar-inverter",
+    "shortDescription": "Advanced solar inverters with hybrid and battery backup support.",
+    "defaultVariantId": 201,
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "Lithium Battery",
+    "slug": "lithium-battery",
+    "shortDescription": "Long-lasting lithium batteries for solar energy storage.",
+    "defaultVariantId": 301,
+    "isActive": true
+  },
+  {
+    "id": 4,
+    "name": "Solar Pump",
+    "slug": "solar-pump",
+    "shortDescription": "Efficient solar-powered pumps for agricultural and residential use.",
+    "defaultVariantId": 401,
+    "isActive": true
+  }
+]
